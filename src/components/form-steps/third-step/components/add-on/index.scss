@@ -1,0 +1,47 @@
+@import "./../../../../../index.scss";
+
+.addon-container{
+    border-radius: 5px;
+    border: 1px solid $light-gray;
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    .description{
+        display: flex;
+        flex-direction: column;
+        gap:3px;
+        flex-grow: 1;
+        h1{
+            font-size: 16px;
+        }
+        
+    }
+    .price{
+        font-weight: 500;
+        color:$purplish-blue;
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: $alabaster;
+    }
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 22px;
+        height: 22px;
+        border: 1px solid $light-gray;
+        border-radius: 3px;
+        transition: 0.3s ease;
+        &:checked{
+            background-image: url('../../../../../../public/images/icon-checkmark.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $purplish-blue;
+            transform: 1s;
+        }
+    }
+}

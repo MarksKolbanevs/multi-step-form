@@ -1,0 +1,46 @@
+@import "./../../../index.scss";
+
+.fourth-step-container{
+    flex-grow: 1;
+    .info-container{
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 30px;
+        .subscription-info-container{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $light-gray;
+            padding-bottom: 20px;
+            align-items: center;
+            .subscription-name{
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+                a{
+                    font-size: 15px;
+                    text-decoration: underline;
+                    &:active{
+                        color:$purplish-blue;
+                    }
+                }
+            }
+            h1{
+                font-size: 16px;
+            }
+        }
+        .subinfo-container{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+    }
+    .total-info-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 20px;
+        h1{
+            font-size: 20px;
+            color: $purplish-blue;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "./../../index.scss";
+
+.customised-input{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    label{
+        display: flex;
+        justify-content: space-between;
+        .error-message{
+            font-size: 14px;
+            font-weight: 600;
+            color:$strawberry-red;
+        }
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid $light-gray;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        &::placeholder{
+            color: $cool-gray;
+            font-weight: 500;
+        }
+    }
+    .show-error-message{
+        border: 1px solid $strawberry-red;
+        visibility:visible;
+    }
+    .hide-error-message{
+        visibility: hidden;
+    }
+}

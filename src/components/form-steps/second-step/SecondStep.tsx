@@ -66,7 +66,7 @@ export default function SecondStep(){
             <div className="monthly-yearly-switcher-container">
                 <h2 className={!subscribePeriod.includes('monthly') ? "grey-text" : ""}>Monthly</h2>
                 <label className="switch">
-                <input type="checkbox" onClick={toggleSwitchPlanSubscribe} checked={subscribePeriod.includes('monthly') ? false : true}/>
+                <input type="checkbox" onClick={toggleSwitchPlanSubscribe} defaultChecked={subscribePeriod.includes('monthly') ? false : true}/>
                 <span className="slider"/>
                 </label>
                 <h2 className={!subscribePeriod.includes('yearly') ? "grey-text" : ""}>Yearly</h2>

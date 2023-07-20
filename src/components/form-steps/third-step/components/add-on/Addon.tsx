@@ -7,7 +7,7 @@ export default function Addon(props:{addon:AddOn,subscribePeriod:"monthly" | "ye
     const { addOn } = useContext(FormContext);
     return(
         <div className="addon-container">
-            <input type="checkbox" onClick = {props.onClick} checked={addOn && addOn[props.addon.name] !== undefined ? true : false}/>
+            <input type="checkbox" onClick = {props.onClick} defaultChecked={addOn && addOn[props.addon.name] !== undefined ? true : false}/>
             <div className="description">
                 <h1>{props.addon.name}</h1>
                 <p className="grey-text">{props.addon.description}</p>

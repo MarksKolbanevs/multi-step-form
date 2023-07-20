@@ -60,7 +60,8 @@ export default function ThirdStep(){
         <div className="third-step-container">
             {Object.keys(addOns).map((key) => {
               return (
-                <Addon 
+                <Addon
+                key={key}
                 abbreviatedSubscribePeriod = {abbreviatedSubscribePeriod} 
                 onClick = {() => handlePush(addOns[key])} 
                 subscribePeriod = {subscribePeriod} 

@@ -137,6 +137,7 @@ function App() {
               <div className="thank-you-container">
                 <div className="thank-you">
                   <img src = "./images/icon-thank-you.svg"/>
+                  <h1>Thank you!</h1>
                   <p className="grey-text">
                     Thank for confirming your subscription!
                      We hope you have fun using our platform.

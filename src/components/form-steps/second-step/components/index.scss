@@ -28,3 +28,12 @@
         border: 1px solid $marine-blue;
         background-color: $alabaster; 
 }
+
+@media screen and (max-width:740px) {
+    .plan-card{
+        justify-content: normal !important;
+        flex-direction: row !important;
+        gap:20px;
+        max-height: none !important;
+    }
+}

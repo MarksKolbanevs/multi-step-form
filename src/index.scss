@@ -137,14 +137,15 @@ h1{
                 .dad{
                     display: flex;
                     flex-direction: column;
+                    flex-grow: 1;
                     gap:40px;
                     header{
-                    display: flex;
-                    flex-direction: column;
-                    gap:10px;
-                    p{
-                        line-height: 1.3;
-                    }
+                        display: flex;
+                        flex-direction: column;
+                        gap:10px;
+                        p{
+                            line-height: 1.3;
+                        }
                     }  
                 }
                 .align-button-to-right{
@@ -212,6 +213,7 @@ h1{
                 width: 100% !important;
                 align-items: center;
                 .dad{
+                    flex-grow: 0 !important;
                     max-width: 400px !important;
                     width: 100% !important;
                     background-color: $white;
@@ -226,7 +228,15 @@ h1{
                     padding: 20px !important;
                     background-color: $white;
                     width: 100%;
-                } 
+                }
+                .thank-you-container{
+                    max-height: 400px !important;
+                    height: 100% !important;
+                    background-color: $white;
+                    padding:20px !important;
+                    border-radius: 10px !important;
+                    margin-top: 110px !important;
+                }
             } 
         }
     }

@@ -60,3 +60,11 @@
     }
 }
 
+@media screen and (max-width:740px) {
+    .select-plan-container{
+        grid-template-columns: 1fr !important;
+        row-gap: 20px;
+        max-height: none !important;
+    }
+}
+
